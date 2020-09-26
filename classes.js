@@ -16,10 +16,10 @@ class Materializer {
 }
 
 
-const m = new Materializer('Kevin');
-console.log(m.activated); // would print "false"
+const materializer = new Materializer('Kevin');
+console.log(materializer.activated); // would print "false"
 
-m.activate();
-console.log(m.activated); // would print "true"
+materializer.activate();
+console.log(materializer.activated); // would print "true"
 
-console.log(m.materialize()); // would print "Kevin"
+console.log(materializer.materialize() + " materialized"); // would print "Kevin"
