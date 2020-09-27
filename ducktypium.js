@@ -12,11 +12,14 @@ class Ducktypium {
         if (color != 'red' && color != 'blue' && color != 'yellow' ){
             throw new Error("Wrong color!");
         };
-        if (color == 'blue') {
+        if (this.color == 'red' && color == 'blue' || this.color == 'blue' && color == 'red') {
             newColor = 'purple'
         }
-        if (color == 'yellow') {
+        if (this.color == 'red' && color == 'yellow' || this.color == 'yellow' && color == 'red') {
             newColor = 'orange'
+        }
+        if (this.color == 'blue' && color == 'yellow'|| this.color == 'yellow' && color == 'blue') {
+            newColor = 'green'
         }
         if (color == this.color) {
             return this.color
